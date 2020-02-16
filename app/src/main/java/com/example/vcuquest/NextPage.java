@@ -76,8 +76,9 @@ public class NextPage extends AppCompatActivity {
         });
     }
 
-    public void openActivityThree()
+    private void openActivityThree()
     {
-        Intent intent = new Intent(this, Objective3.class);
+        Intent intent = new Intent(this, ThirdPage.class);
+        startActivity(intent);
     }
 }
