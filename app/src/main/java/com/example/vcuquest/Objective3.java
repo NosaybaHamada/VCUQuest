@@ -21,18 +21,21 @@ public class Objective3 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_objective3);
 
-        EditText Submition = findViewById(R.id.Submition_ID);
-        TextView correctOutput = findViewById(R.id.correct_ID);
-        TextView falseOutput = findViewById(R.id.false_id);
-        String submition = Submition.getText().toString();
-        String CorrectAnswer = "THE TRUSTEES";
-        String output;
-
-        SubmitButton.setOnClickListener(new view.onClickListener){
 
 
+        SubmitButton.setOnClickListener(new View.OnClickListener() {
+
+            EditText Submition = findViewById(R.id.Submition_ID);
+            TextView correctOutput = findViewById(R.id.correct_ID);
+            TextView falseOutput = findViewById(R.id.false_id);
+            String submition = Submition.getText().toString();
+            String CorrectAnswer = "THE TRUSTEES";
+            String output;
             @Override
-            public void onClick(View v){
+
+
+            public void onClick(View v) {
+
 
                 if (submition == CorrectAnswer) {
                     output = "Correct";
@@ -41,12 +44,11 @@ public class Objective3 extends AppCompatActivity {
                     output = "False";
                     falseOutput.setText(output);
                 }
-
             }
-
-
-
         });
+
+
+
 
 
 
