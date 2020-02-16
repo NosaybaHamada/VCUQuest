@@ -24,6 +24,8 @@ public class ThirdPage extends AppCompatActivity {
     EditText answer;
     ProgressBar progress;
     ImageButton mapButton;
+    TextView Correct;
+    TextView Incorrect;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +39,8 @@ public class ThirdPage extends AppCompatActivity {
         progress  = (ProgressBar) findViewById(R.id.progressBar);
         mapButton = (ImageButton) findViewById(R.id.mapButton);
         answer = (EditText) findViewById(R.id.answer);
+        Correct = (TextView) findViewById(R.id.CorrectText);
+        Incorrect = (TextView) findViewById(R.id.IncorrectText);
 
         nextPage.setVisibility(View.INVISIBLE);
 
@@ -51,11 +55,17 @@ public class ThirdPage extends AppCompatActivity {
             {
                 if (answer.getText().toString().equalsIgnoreCase("the trustees"))
                 {
+                    String output = "Correct!";
+                    Correct.setText(output);
+                    Incorrect.setText("");
                     nextPage.setVisibility(View.VISIBLE);
                 }
                 else
                 {
-                    System.out.println("That's incorrect! Try again! (Hint: 'Ten' = 10");
+                    String output = "Inorrect!";
+                    Incorrect.setText(output);
+                    Correct.setText("");
+                    //System.out.println("That's incorrect! Try again! (Hint: 'Ten' = 10");
                     nextPage.setVisibility(View.INVISIBLE);
                 }
             }

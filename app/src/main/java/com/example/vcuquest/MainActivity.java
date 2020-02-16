@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.EditText;
 import android.text.TextWatcher;
+import android.widget.TextView;
 
 import org.w3c.dom.Text;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -22,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
     Button button;
     EditText answer;
     ImageButton mapButton;
+    TextView Correct;
+    TextView Incorrect;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
         button = (Button) findViewById(R.id.nextButton);
         mapButton = (ImageButton)findViewById(R.id.mapButton);
         answer = (EditText) findViewById(R.id.answer0);
+        Correct = (TextView) findViewById(R.id.CorrectText);
+        Incorrect = (TextView) findViewById(R.id.incorrectText);
 
         button.setVisibility(View.INVISIBLE);
 
@@ -45,11 +50,17 @@ public class MainActivity extends AppCompatActivity {
             {
                 if (answer.getText().toString().equalsIgnoreCase("commons"))
                 {
+                    String output = "Correct!";
+                    Correct.setText(output);
+                    Incorrect.setText("");
                     button.setVisibility(View.VISIBLE);
                 }
                 else
                 {
-                    System.out.println("That's incorrect! Try again! (Hint: it's only one word)");
+                    String output = "Inorrect!";
+                    Incorrect.setText(output);
+                    Correct.setText("");
+                    //System.out.println("That's incorrect! Try again! (Hint: it's only one word)");
                     button.setVisibility(View.INVISIBLE);
                 }
             }

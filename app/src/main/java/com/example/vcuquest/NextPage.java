@@ -25,6 +25,9 @@ public class NextPage extends AppCompatActivity {
     EditText answer;
     ProgressBar progress;
     ImageButton mapButton;
+    TextView Correct;
+    TextView Incorrect;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +41,8 @@ public class NextPage extends AppCompatActivity {
         progress  = (ProgressBar) findViewById(R.id.progressBar);
         mapButton = (ImageButton) findViewById(R.id.mapButton);
         answer = (EditText) findViewById(R.id.answer);
+        Correct = (TextView) findViewById(R.id.correctText);
+        Incorrect = (TextView) findViewById(R.id.IncorrectText);
 
         nextPage.setVisibility(View.INVISIBLE);
 
@@ -52,11 +57,18 @@ public class NextPage extends AppCompatActivity {
             {
                 if (answer.getText().toString().equalsIgnoreCase("three"))
                 {
+
+                    String output = "Correct!";
+                    Correct.setText(output);
+                   Incorrect.setText("");
                     nextPage.setVisibility(View.VISIBLE);
                 }
                 else
                 {
-                    System.out.println("That's incorrect! Try again! (Hint: 'Ten' = 10");
+                    String output = "Inorrect!";
+                   Incorrect.setText(output);
+                    Correct.setText("");
+                    //System.out.println("That's incorrect! Try again! (Hint: 'Ten' = 10");
                     nextPage.setVisibility(View.INVISIBLE);
                 }
             }
