@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button button = (Button) findViewById(R.id.button2);
+        Button button = (Button) findViewById(R.id.nextButton);
         ImageButton mapButton = (ImageButton)findViewById(R.id.mapButton);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
