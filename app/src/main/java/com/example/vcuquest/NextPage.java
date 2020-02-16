@@ -78,6 +78,6 @@ public class NextPage extends AppCompatActivity {
 
     public void openActivityThree()
     {
-        Intent intent = new Intent(this, objective3.class);
+        Intent intent = new Intent(this, Objective3.class);
     }
 }
