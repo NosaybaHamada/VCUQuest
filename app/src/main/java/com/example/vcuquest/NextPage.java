@@ -24,7 +24,7 @@ public class NextPage extends AppCompatActivity {
     TextView percentage;
     EditText answer;
     ProgressBar progress;
-    ImageButton map;
+    ImageButton mapButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +37,7 @@ public class NextPage extends AppCompatActivity {
         vcuQuestion = (TextView) findViewById(R.id.vcusign);
         percentage = (TextView) findViewById(R.id.percent);
         progress  = (ProgressBar) findViewById(R.id.progressBar);
-        map = (ImageButton) findViewById(R.id.mapButton);
+        mapButton = (ImageButton) findViewById(R.id.mapButton);
         answer = (EditText) findViewById(R.id.answer);
 
         nextPage.setVisibility(View.INVISIBLE);
@@ -74,11 +74,25 @@ public class NextPage extends AppCompatActivity {
                 openActivityThree();
             }
         });
+
+        mapButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goToMapActivity();
+
+            }
+        });
     }
 
     private void openActivityThree()
     {
         Intent intent = new Intent(this, ThirdPage.class);
+        startActivity(intent);
+    }
+
+    private void goToMapActivity()
+    {
+        Intent intent = new Intent(this, MapPage.class);
         startActivity(intent);
     }
 }
