@@ -13,3 +13,4 @@ public class ThirdPage extends AppCompatActivity {
         setContentView(R.layout.activity_third_page);
     }
 }
+
