@@ -74,7 +74,7 @@
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="240dp"
         android:layout_height="46dp"
-        android:progress="10"
+        android:progress="30"
         android:progressTint="#F5BE1E"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
