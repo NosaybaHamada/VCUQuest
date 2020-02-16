@@ -32,7 +32,6 @@ public class NextPage extends AppCompatActivity {
         setContentView(R.layout.activity_next_page);
 
         nextPage = (Button) findViewById(R.id.nextButton);
-        submit = (Button) findViewById(R.id.submitButton);
         objectiveText = (TextView) findViewById(R.id.objectiveText);
         vcuQuestion = (TextView) findViewById(R.id.vcusign);
         percentage = (TextView) findViewById(R.id.percent);
