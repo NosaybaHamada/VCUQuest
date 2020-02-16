@@ -10,7 +10,6 @@ import android.widget.EditText;
 import android.text.TextWatcher;
 
 import org.w3c.dom.Text;
-
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.appcompat.app.AppCompatActivity;
