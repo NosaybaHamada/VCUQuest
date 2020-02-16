@@ -4,4 +4,5 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="vcu_quest">VCU Quest</string>
+    <string name="title_activity_map_page">MapPage</string>
 </resources>
