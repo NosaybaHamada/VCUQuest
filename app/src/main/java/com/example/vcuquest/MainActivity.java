@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else
                 {
-                    String output = "Inorrect!";
+                    String output = "Incorrect!";
                     Incorrect.setText(output);
                     Correct.setText("");
                     //System.out.println("That's incorrect! Try again! (Hint: it's only one word)");

@@ -65,7 +65,7 @@ public class NextPage extends AppCompatActivity {
                 }
                 else
                 {
-                    String output = "Inorrect!";
+                    String output = "Incorrect!";
                    Incorrect.setText(output);
                     Correct.setText("");
                     //System.out.println("That's incorrect! Try again! (Hint: 'Ten' = 10");
