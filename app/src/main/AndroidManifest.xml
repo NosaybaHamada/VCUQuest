@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FourthPage"></activity>
+        <activity android:name=".FifthPage"></activity>
+        <activity android:name=".FifthPage2" />
+        <activity android:name=".FourthPage" />
         <activity android:name=".ThirdPage" />
         <activity android:name=".MapPage" />
         <activity android:name=".NextPage" />

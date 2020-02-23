@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.FifthPage">
+    tools:context=".FifthPage">
+
 
     <TextView
         android:id="@+id/vcusign"
@@ -97,7 +98,7 @@
         app:layout_constraintVertical_bias="0.976" />
 
     <CheckBox
-        android:id="@+id/correctAnswer1"
+        android:id="@+id/correcAnswer1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="The Seigel Center"
@@ -121,7 +122,7 @@
         app:layout_constraintVertical_bias="0.884" />
 
     <CheckBox
-        android:id="@+id/FalseAnswer"
+        android:id="@+id/CheckBox5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hibbs Hall"
@@ -133,7 +134,7 @@
         app:layout_constraintVertical_bias="0.804" />
 
     <CheckBox
-        android:id="@+id/CorrectAnswer3"
+        android:id="@+id/correctAnswer2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Regnal Centre"
@@ -145,7 +146,7 @@
         app:layout_constraintVertical_bias="0.804" />
 
     <CheckBox
-        android:id="@+id/correctAnswer3"
+        android:id="@+id/correctAsnswer3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="VCU Health Centre"
@@ -167,6 +168,31 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.884" />
+
+    <TextView
+        android:id="@+id/IncorrectText"
+        android:layout_width="84dp"
+        android:layout_height="39dp"
+        android:textColor="#E91C0D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.657"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.963" />
+
+
+    <TextView
+        android:id="@+id/CorrectText"
+        android:layout_width="84dp"
+        android:layout_height="35dp"
+        android:textColor="#4CAF50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.657"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.964" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
