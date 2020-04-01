@@ -81,7 +81,7 @@ public class FifthPage extends AppCompatActivity {
     }
     private void openActivityFive()
     {
-        Intent intent = new Intent(this, ThirdPage.class);
+        Intent intent = new Intent(this, SeventhPage.class);
         startActivity(intent);
     }
 

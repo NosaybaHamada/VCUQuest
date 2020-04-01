@@ -11,7 +11,8 @@ import android.widget.ImageButton;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-public class SeventhPage extends AppCompatActivity {
+public class NinenthPage extends AppCompatActivity {
+
 
     Button nextPage;
     TextView objectiveText;
@@ -26,7 +27,8 @@ public class SeventhPage extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_seventh_page);
+        setContentView(R.layout.activity_ninenth_page);
+
 
         nextPage = (Button) findViewById(R.id.nextButton);
         objectiveText = (TextView) findViewById(R.id.objectiveText);
@@ -51,7 +53,7 @@ public class SeventhPage extends AppCompatActivity {
                     Incorrect.setText(output);
                     //openActivityFive();
                 }
-                else if (checkOne.isChecked() && checkFour.isChecked())
+                else if (checkThree.isChecked() && checkFour.isChecked())
                 {
                     String output = "Correct!";
                     Correct.setText(output);
