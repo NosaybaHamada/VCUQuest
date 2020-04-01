@@ -11,8 +11,7 @@ import android.widget.ImageButton;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-public class FifthPage extends AppCompatActivity {
-
+public class SeventhPage extends AppCompatActivity {
 
     Button nextPage;
     TextView objectiveText;
@@ -22,13 +21,12 @@ public class FifthPage extends AppCompatActivity {
     ImageButton mapButton;
     TextView Correct;
     TextView Incorrect;
-    CheckBox checkOne, checkTwo, checkThree, checkFour, checkFive, checkSix;
-
+    CheckBox checkOne, checkTwo, checkThree, checkFour;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_fifth_page);
+        setContentView(R.layout.activity_seventh_page);
         nextPage = (Button) findViewById(R.id.nextButton);
         objectiveText = (TextView) findViewById(R.id.objectiveText);
         vcuQuestion = (TextView) findViewById(R.id.vcusign);
@@ -37,24 +35,22 @@ public class FifthPage extends AppCompatActivity {
         mapButton = (ImageButton) findViewById(R.id.mapButton);
         Correct = (TextView) findViewById(R.id.CorrectText);
         Incorrect = (TextView) findViewById(R.id.IncorrectText);
-        checkOne = (CheckBox) findViewById(R.id.correcAnswer1);
-        checkTwo = (CheckBox) findViewById(R.id.correctAnswer2);
-        checkThree = (CheckBox) findViewById(R.id.correctAsnswer3);
-        checkFour = (CheckBox) findViewById(R.id.CheckBox5);
-        checkFive = (CheckBox) findViewById(R.id.checkBox2);
-        checkSix = (CheckBox) findViewById(R.id.checkBox6);
+        checkOne = (CheckBox) findViewById(R.id.checkBoxOne);
+        checkTwo = (CheckBox) findViewById(R.id.checkBoxTwo);
+        checkThree = (CheckBox) findViewById(R.id.checkBoxThree);
+        checkFour = (CheckBox) findViewById(R.id.checkBoxFour);
 
         nextPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (checkOne.isChecked() && checkTwo.isChecked() && checkThree.isChecked() && checkFour.isChecked() && checkFive.isChecked() && checkSix.isChecked())
+                if (checkOne.isChecked() && checkTwo.isChecked() && checkThree.isChecked() && checkFour.isChecked())
                 {
                     String output = "Incorrect!";
                     Correct.setText("");
                     Incorrect.setText(output);
                     //openActivityFive();
                 }
-                else if (checkOne.isChecked() && checkTwo.isChecked() && checkThree.isChecked())
+                else if (checkOne.isChecked() && checkFour.isChecked())
                 {
                     String output = "Correct!";
                     Correct.setText(output);
@@ -79,9 +75,10 @@ public class FifthPage extends AppCompatActivity {
             }
         });
     }
+
     private void openActivityFive()
     {
-        Intent intent = new Intent(this, ThirdPage.class);
+        Intent intent = new Intent(this, FifthPage.class);
         startActivity(intent);
     }
 
