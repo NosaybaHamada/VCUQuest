@@ -17,27 +17,41 @@
         app:layout_constraintVertical_bias="0.197"
         app:srcCompat="@drawable/vculogo" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.AppCompat.Button.Borderless"
         android:id="@+id/start"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/days_one"
         android:text="START"
+        android:textColor="#FFBA00"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:backgroundTint="@android:color/transparent"
+        app:cornerRadius="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.806" />
+        app:layout_constraintVertical_bias="0.835"
+        app:rippleColor="#33AAAAAA"
+        app:strokeColor="#000000"
+        app:strokeWidth="2dp" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="386dp"
+        android:layout_height="66dp"
+        android:fontFamily="@font/days_one"
         android:text="QUEST @ VCU"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFBA00"
+        android:textSize="45sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.64"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.082" />
+        app:layout_constraintVertical_bias="0.072" />
 </androidx.constraintlayout.widget.ConstraintLayout>
