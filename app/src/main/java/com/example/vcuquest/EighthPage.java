@@ -11,8 +11,7 @@ import android.widget.ImageButton;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-public class FifthPage extends AppCompatActivity {
-
+public class EighthPage extends AppCompatActivity {
 
     Button nextPage;
     TextView objectiveText;
@@ -28,7 +27,7 @@ public class FifthPage extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_fifth_page);
+        setContentView(R.layout.activity_eighth_page);
         nextPage = (Button) findViewById(R.id.nextButton);
         objectiveText = (TextView) findViewById(R.id.objectiveText);
         vcuQuestion = (TextView) findViewById(R.id.vcusign);
@@ -40,19 +39,19 @@ public class FifthPage extends AppCompatActivity {
         checkOne = (CheckBox) findViewById(R.id.correctAnswer1);
         checkTwo = (CheckBox) findViewById(R.id.correctAnswer2);
         checkThree = (CheckBox) findViewById(R.id.correctAnswer3);
-        checkFour = (CheckBox) findViewById(R.id.CheckBox5);
+        //checkFour = (CheckBox) findViewById(R.id.CheckBox5);
         checkFive = (CheckBox) findViewById(R.id.checkBox2);
-        checkSix = (CheckBox) findViewById(R.id.checkBox6);
+        //checkSix = (CheckBox) findViewById(R.id.checkBox6);
 
         nextPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (checkOne.isChecked() && checkTwo.isChecked() && checkThree.isChecked() && checkSix.isChecked())
+                if (checkFive.isChecked() && (!checkTwo.isChecked()) && (!checkThree.isChecked()) && (!checkOne.isChecked()))
                 {
                     String output = "Correct!";
                     Correct.setText(output);
                     Incorrect.setText("");
-                    openActivitySix();
+                    openActivityNine();
                 }
                 else
                 {
@@ -72,9 +71,9 @@ public class FifthPage extends AppCompatActivity {
             }
         });
     }
-    private void openActivitySix()
+    private void openActivityNine()
     {
-        Intent intent = new Intent(this, SixthPage.class);
+        Intent intent = new Intent(this, NinenthPage.class);
         startActivity(intent);
     }
 

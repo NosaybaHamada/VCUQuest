@@ -4,14 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FifthPage">
-
+    tools:context=".EighthPage">
 
     <TextView
         android:id="@+id/vcusign"
         android:layout_width="388dp"
         android:layout_height="41dp"
-        android:text="What places are availble on Broad Street?"
+        android:text="Where is the VCU Police Station located?"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="18sp"
@@ -26,7 +25,7 @@
         android:id="@+id/objectiveText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Objective #5"
+        android:text="Objective #8"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -39,7 +38,7 @@
         android:id="@+id/percentText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="40%"
+        android:text="70%"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -76,7 +75,7 @@
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="240dp"
         android:layout_height="46dp"
-        android:progress="40"
+        android:progress="70"
         android:progressTint="#F5BE1E"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -97,78 +96,58 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.976" />
 
+
     <CheckBox
         android:id="@+id/correctAnswer1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="The Seigel Center"
+        android:layout_width="179dp"
+        android:layout_height="44dp"
+        android:text=" East Broad Street"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.037"
+        app:layout_constraintHorizontal_bias="0.068"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.804" />
+        app:layout_constraintVertical_bias="0.818" />
 
     <CheckBox
         android:id="@+id/checkBox2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Panera Bread"
+        android:layout_width="184dp"
+        android:layout_height="61dp"
+        android:text="West Grace Street"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.034"
+        app:layout_constraintHorizontal_bias="0.07"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.884" />
-
-    <CheckBox
-        android:id="@+id/CheckBox5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hibbs Hall"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.914"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.804" />
+        app:layout_constraintVertical_bias="0.904" />
 
     <CheckBox
         android:id="@+id/correctAnswer2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Regnal Center"
+        android:layout_width="179dp"
+        android:layout_height="44dp"
+        android:text="West Cary Street"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintHorizontal_bias="0.913"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.804" />
+        app:layout_constraintVertical_bias="0.823" />
 
     <CheckBox
         android:id="@+id/correctAnswer3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="VCU Health Center"
+        android:layout_width="199dp"
+        android:layout_height="42dp"
+        android:text="West Franklin Street"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.884" />
-
-    <CheckBox
-        android:id="@+id/checkBox6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="VCU Parking"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.96"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.884" />
-
+        app:layout_constraintVertical_bias="0.895" />
 
     <TextView
         android:id="@+id/IncorrectText"
@@ -177,7 +156,7 @@
         android:textColor="#E91C0D"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.825"
+        app:layout_constraintHorizontal_bias="0.761"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.963" />
@@ -189,7 +168,7 @@
         android:textColor="#4CAF50"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.825"
+        app:layout_constraintHorizontal_bias="0.761"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.964" />

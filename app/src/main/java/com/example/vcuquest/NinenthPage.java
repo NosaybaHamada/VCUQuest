@@ -58,7 +58,7 @@ public class NinenthPage extends AppCompatActivity {
                     String output = "Correct!";
                     Correct.setText(output);
                     Incorrect.setText("");
-                    openActivityFive();
+                    openActivityTen();
                 }
                 else
                 {
@@ -79,9 +79,9 @@ public class NinenthPage extends AppCompatActivity {
         });
     }
 
-    private void openActivityFive()
+    private void openActivityTen()
     {
-        Intent intent = new Intent(this, FifthPage.class);
+        Intent intent = new Intent(this, TenthPage.class);
         startActivity(intent);
     }
 
