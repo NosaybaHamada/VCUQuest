@@ -10,6 +10,7 @@
         android:id="@+id/checkBoxFour"
         android:layout_width="148dp"
         android:layout_height="40dp"
+        android:buttonTint="#FFBA00"
         android:text="Starbucks Coffee"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,6 +23,7 @@
         android:id="@+id/checkBoxThree"
         android:layout_width="148dp"
         android:layout_height="40dp"
+        android:buttonTint="#FFBA00"
         android:text="VCU Media Support Services"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,6 +36,7 @@
         android:id="@+id/checkBoxTwo"
         android:layout_width="137dp"
         android:layout_height="36dp"
+        android:buttonTint="#FFBA00"
         android:text="VCU IT Support Center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -60,14 +63,16 @@
         android:id="@+id/objectiveText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/days_one"
         android:text="Objective #4"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#FFBA00"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.649" />
+        app:layout_constraintVertical_bias="0.647" />
 
     <TextView
         android:id="@+id/percentText"
@@ -80,7 +85,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.588" />
+        app:layout_constraintVertical_bias="0.584" />
 
     <ImageButton
         android:id="@+id/mapButton"
@@ -121,7 +126,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.545" />
+        app:layout_constraintVertical_bias="0.567" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/nextButton"
@@ -173,6 +178,7 @@
         android:id="@+id/checkBoxOne"
         android:layout_width="133dp"
         android:layout_height="35dp"
+        android:buttonTint="#FFBA00"
         android:text="The Workshop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

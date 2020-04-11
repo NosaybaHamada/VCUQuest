@@ -87,8 +87,11 @@ public class NinenthPage extends AppCompatActivity {
 
     private void goToMapActivity()
     {
-        Intent intent = new Intent(this, MapPage.class);
-        startActivity(intent);
+        Intent intent = new Intent(this, GoogleMaps.class );
+        int num = 9;
+        Intent myIntent = new Intent(NinenthPage.this, GoogleMaps.class);
+        myIntent.putExtra("mapcounter", num);
+        startActivity(myIntent);
     }
 }
 

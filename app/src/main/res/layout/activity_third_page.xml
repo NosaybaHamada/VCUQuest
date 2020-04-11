@@ -10,6 +10,7 @@
         android:id="@+id/correctCheckFour"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:buttonTint="#FFBA00"
         android:text="Committee of Three"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,6 +23,7 @@
         android:id="@+id/correctCheckTwo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:buttonTint="#FFBA00"
         android:text="The Founders"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -73,7 +75,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.588" />
+        app:layout_constraintVertical_bias="0.584" />
 
     <ImageButton
         android:id="@+id/mapButton"
@@ -112,10 +114,10 @@
         android:progressTint="#F5BE1E"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.545" />
+        app:layout_constraintVertical_bias="0.567" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/nextButton"
@@ -167,6 +169,7 @@
         android:id="@+id/correctCheckOne"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:buttonTint="#FFBA00"
         android:text="Future Leaders"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -179,6 +182,7 @@
         android:id="@+id/correctCheckThree"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:buttonTint="#FFBA00"
         android:text="The Trustees"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

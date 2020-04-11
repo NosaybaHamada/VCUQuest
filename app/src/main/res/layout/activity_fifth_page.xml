@@ -48,7 +48,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.598" />
+        app:layout_constraintVertical_bias="0.584" />
 
     <ImageButton
         android:id="@+id/mapButton"
@@ -117,6 +117,7 @@
         android:id="@+id/correctAnswer1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:buttonTint="#FFBA00"
         android:text="The Seigel Center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -129,6 +130,7 @@
         android:id="@+id/checkBox2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:buttonTint="#FFBA00"
         android:text="Panera Bread"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -141,6 +143,7 @@
         android:id="@+id/CheckBox5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:buttonTint="#FFBA00"
         android:text="Hibbs Hall"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -153,6 +156,7 @@
         android:id="@+id/correctAnswer2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:buttonTint="#FFBA00"
         android:text="Regnal Center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -165,6 +169,7 @@
         android:id="@+id/correctAnswer3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:buttonTint="#FFBA00"
         android:text="VCU Health Center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -177,6 +182,7 @@
         android:id="@+id/checkBox6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:buttonTint="#FFBA00"
         android:text="VCU Parking"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

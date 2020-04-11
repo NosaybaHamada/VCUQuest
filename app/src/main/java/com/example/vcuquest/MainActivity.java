@@ -102,10 +102,12 @@ public class MainActivity extends AppCompatActivity {
 
     }
     private void goToMapActivity() {
+        Intent intent = new Intent(this, GoogleMaps.class );
+        int num = 1;
+        Intent myIntent = new Intent(MainActivity.this, GoogleMaps.class);
+        myIntent.putExtra("mapcounter", num);
+        startActivity(myIntent);
 
-        Intent intent = new Intent(this, MapPage.class );
-
-        startActivity(intent);
 
     }
 

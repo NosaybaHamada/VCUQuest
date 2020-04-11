@@ -80,7 +80,10 @@ public class SixthPage extends AppCompatActivity {
 
     private void goToMapActivity()
     {
-        Intent intent = new Intent(this, MapPage.class);
-        startActivity(intent);
+        Intent intent = new Intent(this, GoogleMaps.class );
+        int num = 6;
+        Intent myIntent = new Intent(SixthPage.this, GoogleMaps.class);
+        myIntent.putExtra("mapcounter", num);
+        startActivity(myIntent);
     }
 }

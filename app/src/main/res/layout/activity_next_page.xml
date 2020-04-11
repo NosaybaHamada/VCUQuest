@@ -10,6 +10,7 @@
         android:id="@+id/correctCheckFour"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:buttonTint="#FFBA00"
         android:text="Two (2)"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,6 +23,7 @@
         android:id="@+id/correctCheckThree"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:buttonTint="#FFBA00"
         android:text="Four (4)"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,7 +36,7 @@
         android:id="@+id/vcusign"
         android:layout_width="387dp"
         android:layout_height="58dp"
-        android:text='How many steps are in the staircase next to the silver "VCU" sign in the compass?'
+        android:text='How many steps are in the staircase next to the silver "VCU" sign in front of ALC?'
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="18sp"
@@ -70,7 +72,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.62" />
+        app:layout_constraintVertical_bias="0.584" />
 
     <ImageButton
         android:id="@+id/mapButton"
@@ -97,7 +99,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.024" />
+        app:layout_constraintVertical_bias="0.027" />
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -111,7 +113,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.567" />
+        app:layout_constraintVertical_bias=".567" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/nextButton"
@@ -163,6 +165,7 @@
         android:id="@+id/correctCheckOne"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:buttonTint="#FFBA00"
         android:text="Three (3)"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -175,6 +178,7 @@
         android:id="@+id/correctCheckTwo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:buttonTint="#FFBA00"
         android:text="Five (5)"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

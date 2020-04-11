@@ -79,7 +79,10 @@ public class TenthPage extends AppCompatActivity {
 
     private void goToMapActivity()
     {
-        Intent intent = new Intent(this, MapPage.class);
-        startActivity(intent);
+        Intent intent = new Intent(this, GoogleMaps.class );
+        int num = 10;
+        Intent myIntent = new Intent(TenthPage.this, GoogleMaps.class);
+        myIntent.putExtra("mapcounter", num);
+        startActivity(myIntent);
     }
 }

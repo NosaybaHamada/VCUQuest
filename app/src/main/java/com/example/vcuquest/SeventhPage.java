@@ -85,8 +85,11 @@ public class SeventhPage extends AppCompatActivity {
 
     private void goToMapActivity()
     {
-        Intent intent = new Intent(this, MapPage.class);
-        startActivity(intent);
+        Intent intent = new Intent(this, GoogleMaps.class );
+        int num = 7;
+        Intent myIntent = new Intent(SeventhPage.this, GoogleMaps.class);
+        myIntent.putExtra("mapcounter", num);
+        startActivity(myIntent);
     }
 }
 

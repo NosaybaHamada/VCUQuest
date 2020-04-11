@@ -47,7 +47,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.598" />
+        app:layout_constraintVertical_bias="0.584" />
 
     <ImageButton
         android:id="@+id/mapButton"
@@ -116,6 +116,7 @@
         android:id="@+id/correctAnswer1"
         android:layout_width="97dp"
         android:layout_height="51dp"
+        android:buttonTint="#FFBA00"
         android:text="Two"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -129,6 +130,7 @@
         android:id="@+id/checkBox2"
         android:layout_width="96dp"
         android:layout_height="44dp"
+        android:buttonTint="#FFBA00"
         android:text="Seven"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -142,6 +144,7 @@
         android:id="@+id/correctAnswer2"
         android:layout_width="99dp"
         android:layout_height="46dp"
+        android:buttonTint="#FFBA00"
         android:text="Eight"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -155,6 +158,7 @@
         android:id="@+id/correctAnswer3"
         android:layout_width="101dp"
         android:layout_height="53dp"
+        android:buttonTint="#FFBA00"
         android:text="Five"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
